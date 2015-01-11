@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains CUSTOM mapping of keys to actions within XBMC -->
+
+<!-- The format is:                      -->
+<!--    <device>                         -->
+<!--      <button>action</button>        -->
+<!--    </device>                        -->
+
+<!-- To map keys from other remotes using the RCA protocol, you may add <universalremote> blocks -->
+<!-- In this case, the tags used are <obc#> where # is the original button code (OBC) of the key -->
+<!-- You set it up by adding a <universalremote> block to the window or <global> section:       -->
+<!--    <universalremote>             -->
+<!--       <obc45>Stop</obc45>         -->
+<!--    </universalremote>            -->
+
+<!-- Note that the action can be a built-in function.                 -->
+<!--  eg <B>ActivateWindow(MyMusic)</B>                         -->
+<!-- would automatically go to My Music on the press of the B button. -->
+
+<keymap>
+  <global>
+    <keyboard>
+    	<escape>Back</escape>
+      	<play_pause>ContextMenu</play_pause>
+    </keyboard>
+  </global>
+  <FullscreenVideo>
+    <keyboard>
+ 	  	<play_pause>PlayPause</play_pause>
+		<return>OSD</return>
+ 	  	<escape>Stop</escape>
+    	<left>StepBack</left>
+  	    <right>StepForward</right>
+     	<up>NextSubtitle</up>
+     	<down>ActivateWindow(subtitlesearch)</down>
+      	<t>subtitledelay</t>
+    </keyboard>
+  </FullscreenVideo>  
+  <Home>
+   <keyboard>
+  	 <play_pause>ActivateWindow(favourites)</play_pause>
+     <escape>ActivateWindow(shutdownmenu)</escape>
+   </keyboard>
+  </Home>
+</keymap>

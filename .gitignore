@@ -1,1 +1,5 @@
-# My first .gitignore
+# Project specific files #
+portable_data/userdata/favorites.xml
+portable_data/userdata/mediasources.xml
+portable_data/userdata/passwords.xml
+portable_data/userdata/sources.xml
